@@ -1,0 +1,13 @@
+doctype
+html(ng-app="TempleApp")
+	head
+		title Temple App
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		link(href="css/lib.min.css", rel="stylesheet")
+        link(href="css/all.min.css", rel="stylesheet")
+	body(class='boxed')
+        div(ui-view="viewA")
+        div(ui-view="viewB")
+        script(src="js/lib.min.js")
+        script(src="js/app.js")
+        	

@@ -9,4 +9,4 @@ App.config(($statePovider) ->
 			"viewB@": {templateUrl:"login.html", controller: "LoginController"}
 		}	
 	})
-)
+);
