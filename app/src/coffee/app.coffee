@@ -1,12 +1,13 @@
-var App = angular.module 'TempleApp', ['ui.router']
 
-App.config(($statePovider) ->
-	$statePovider.
-	state('home', {
+app = angular.module 'TempleApp', ['ui.router']
+
+app.config(($stateProvider) ->
+	$stateProvider
+	.state('start', {
 		url: ''
 		views: {
-			"viewA@": {templateUrl:"nav.html", controller: "LoginController"},
-			"viewB@": {templateUrl:"login.html", controller: "LoginController"}
+			"viewA@": {templateUrl:"html/nav.html"},
+			"viewB@": {templateUrl:"html/login.html"}
 		}	
 	})
 );
