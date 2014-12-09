@@ -1,6 +1,5 @@
 App.controller 'SignUpControler', ($scope) ->
 	Parse.initialize "Kp6pO0XyctF9YnMzmoDNDO9ShKCIwL9Ev05J2eJQ", "hzDorzQVx03cPlPrSoblQ4rnJ6zsl2tqCGqI4IS4"
-	console.log 'SignUpControler'
 	
 	$scope.signUp = (user) ->
 		Parse.User.signUp(user.username, user.password, {ACL: new Parse.ACL(), email: user.email, mobileNumber: user.mobileNumber}, {
