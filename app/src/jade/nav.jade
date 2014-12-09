@@ -1,5 +1,28 @@
-div#nav-bar
-  nav.navbar.navbar-inverse.navbar-default(role='navigation')
-    div.navbar-header
-      div.navbar-left
-        h2 Temple Application
+div(id='nav-bar')
+    nav(class='navbar navbar-inverse navbar-default', role='navigation')
+        .navbar-header
+            //- img(src='images/logo.png')
+        div(class='nav navbar-nav navbar-left')
+            a(class='navbar-brand')
+                | Aalayam
+        div(class='collapse navbar-collapse', id='bs-example-navbar-collapse-1')
+            ul(class='nav navbar-nav navbar-right')
+                li
+                    a() Dashboard
+                li
+                    a(ui-sref='signup') SignUp
+                li
+                    a() SignIn
+                li(class='dropdown')
+                    a(class='dropdown-toggle' data-toggle='dropdown')
+                        | Admin
+                        b(class='caret')
+                    ul(class='dropdown-menu')
+                        li
+                            a() Create New Pooja
+                        li(class='divider')
+                        li
+                            a Settings
+                        li(class='divider')
+                        li
+                            a(href='#') Logout

@@ -15,12 +15,13 @@ loginModal(tabindex='-1', role='dialog', aria-hidden='true')
               .col-md-12
                 label Password
                 input#password.form-control(ng-model='credentials.password', name='password', type='password', value='', placeholder='Password', required='required')
+          br
           .row
             .form-group
               .col-md-12
                 button#btn-signIn.btn.btn-info.pull-left(type='submit', ng-disabled='sighning')
                   i.glyphicon.glyphicon-log-in
-                  | SignIn
+                  |   SignIn
           .row
             .alert.alert-danger(ng-show='loginFail')
               i.fa.fa-frown-o

@@ -1,13 +1,20 @@
 
-app = angular.module 'TempleApp', ['ui.router']
+App = angular.module 'TempleApp', ['ui.router']
 
-app.config(($stateProvider) ->
+App.config(($stateProvider) ->
 	$stateProvider
 	.state('start', {
 		url: ''
 		views: {
 			"viewA@": {templateUrl:"html/nav.html"},
-			"viewB@": {templateUrl:"html/login.html"}
+			"viewB@": {templateUrl:"html/login.html", controller:"LoginController"}
+		}	
+  	})
+	.state('signup', {
+		url: '/signup'
+		views: {
+			"viewA@": {templateUrl:"html/nav.html"},
+			"viewB@": {templateUrl:"html/signup.html", controller:"SignUpControler"}
 		}	
 	})
 );
