@@ -17,4 +17,11 @@ App.config(($stateProvider) ->
 			"viewB@": {templateUrl:"html/signup.html", controller:"SignUpControler"}
 		}	
 	})
+	.state('home', {
+		url: '/home'
+		views: {
+			"viewA@": {templateUrl:"html/nav.html"}, 
+			"viewB@": {templateUrl:"html/home.html", controller: "HomeController"}	
+		}	
+	})
 );
