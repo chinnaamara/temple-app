@@ -24,4 +24,11 @@ App.config(($stateProvider) ->
 			"viewB@": {templateUrl:"html/home.html", controller: "HomeController"}	
 		}	
 	})
+	.state('register', {
+		url: '/registration'
+		views: {
+			"viewA@": {templateUrl:"html/nav.html"}, 
+			"viewB@": {templateUrl:"html/registration.html", controller: "RegistrationController"}	
+		}
+	})
 );
