@@ -10,7 +10,7 @@ module.exports = (grunt) ->
         options:
           join: true
         files:
-          'build/js/app.js': 'app/src/**/*.coffee'
+          'build/js/app.js': 'app/src/coffee/**/*.coffee'
 
     jade:
       compile:
