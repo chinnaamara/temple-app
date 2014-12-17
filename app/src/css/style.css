@@ -3,8 +3,10 @@
   nav bar styles
   -----------
 */
-#logo-img{
-    float: left;
+.navbar {
+    min-height: 65px;
+    margin-bottom: 36px;
+    border: 4px solid transparent !important;
 }
 .titleclass{
     text-align: center;
@@ -19,12 +21,12 @@
 .navbar.navbar-inverse.navbar-default {
     background: linear-gradient(to bottom right,#72BDFD 0,#357ebd 100%);
     border: none;
-    min-height: inherit;
+    min-height: 75% !important;
 
 }
 .nav.navbar-nav.navbar-right{
     margin: 15px;
-    font-size: 18px;
+    font-size: 20px;
 }
 .navbar.navbar-inverse.navbar-default  a{
     color: #ffffff;
