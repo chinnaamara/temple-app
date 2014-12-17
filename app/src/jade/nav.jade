@@ -5,14 +5,16 @@ div(id='nav-bar')
         div(class='nav navbar-nav navbar-left')
             a(class='navbar-brand')
                 | Aalayam
-        div(class='collapse navbar-collapse', id='bs-example-navbar-collapse-1')
+        div(class='collapse navbar-collapse', ng-if="username")
             ul(class='nav navbar-nav navbar-right')
                 li
                     a(ui-sref='home') Home
                 //- li
                 //-     a(ui-sref='signup') SignUp
                 li
-                    a() SignIn
+                    a() Poojas
+                li
+                    a() Members
                 li(class='dropdown')
                     a(class='dropdown-toggle' data-toggle='dropdown')
                         | Admin
@@ -22,7 +24,7 @@ div(id='nav-bar')
                             a() Create New Pooja
                         li(class='divider')
                         li
-                            a Settings
+                            a() Create New Member                        
                         li(class='divider')
                         li
-                            a(ui-sref='home') Logout
+                            a(ng-click="logout()") Logout

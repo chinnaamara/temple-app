@@ -6,28 +6,35 @@ App.config(($stateProvider) ->
 	.state('start', {
 		url: ''
 		views: {
-			"viewA@": {templateUrl:"html/nav.html"},
+			"viewA@": {templateUrl:"html/nav.html", controller:"NavController"},
+			"viewB@": {templateUrl:"html/login.html", controller:"LoginController"}
+		}	
+  	})
+  	.state('login', {
+		url: '/login'
+		views: {
+			"viewA@": {templateUrl:"html/nav.html", controller:"NavController"},
 			"viewB@": {templateUrl:"html/login.html", controller:"LoginController"}
 		}	
   	})
 	.state('signup', {
 		url: '/signup'
 		views: {
-			"viewA@": {templateUrl:"html/nav.html"},
+			"viewA@": {templateUrl:"html/nav.html", controller:"NavController"},
 			"viewB@": {templateUrl:"html/signup.html", controller:"SignUpControler"}
 		}	
 	})
 	.state('home', {
 		url: '/home'
 		views: {
-			"viewA@": {templateUrl:"html/nav.html"}, 
+			"viewA@": {templateUrl:"html/nav.html", controller:"NavController"}, 
 			"viewB@": {templateUrl:"html/home.html", controller: "HomeController"}	
 		}	
 	})
 	.state('register', {
 		url: '/registration'
 		views: {
-			"viewA@": {templateUrl:"html/nav.html"}, 
+			"viewA@": {templateUrl:"html/nav.html", controller:"NavController"}, 
 			"viewB@": {templateUrl:"html/registration.html", controller: "RegistrationController"}	
 		}
 	})
